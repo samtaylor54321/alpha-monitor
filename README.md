@@ -1,3 +1,5 @@
+[![Alpha Monitor CI](https://github.com/samtaylor54321/alpha-monitor/actions/workflows/cicd.yml/badge.svg)](https://github.com/samtaylor54321/alpha-monitor/actions/workflows/cicd.yml)
+
 # Alpha Monitor
 
 Alpha Monitor is a personal project for testing investment ideas and tracking them through a simple dashboard.
