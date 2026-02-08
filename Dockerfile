@@ -4,9 +4,10 @@ RUN pip install --no-cache-dir uv==0.5.10
 
 WORKDIR /app
 
-COPY pyproject.toml uv.lock ./
-RUN uv sync --frozen
-
+# Copy everything first so the package exists
 COPY . .
 
-CMD ["python", "-c", "print('alpha-monitor container built')"]
+# Now uv can see alpha_monitor and README.md
+RUN uv sync --frozen
+
+CMD ["python", "-c", "import alpha_monitor; print('alpha-monitor ready')"]
