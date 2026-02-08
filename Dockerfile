@@ -1,6 +1,6 @@
 FROM python:3.13-slim
 
-RUN pip install --no-cache-dir uv
+RUN pip install --no-cache-dir uv==0.5.10
 
 WORKDIR /app
 
